@@ -1,0 +1,112 @@
+.home-page {
+  height: 100vh;
+  display: flex;
+
+  & > .left {
+    height: 100%;
+    width: 110px;
+    padding: 15px;
+  }
+
+  .center {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    padding: 20px;
+
+    .left {
+      width: min-content;
+      margin-right: 40px;
+    }
+
+    .right {
+      height: 100%;
+      width: 100%;
+
+      & > img {
+        height: 350px;
+        width: 100%;
+      }
+
+      .d-flex {
+        width: 100%;
+
+        img {
+          width: 48%;
+        }
+      }
+    }
+
+    .exams-list {
+      font-family: "Baloo Bhai 2", cursive;
+
+      h3 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+      }
+
+      .list {
+        display: flex;
+
+        img:first-child {
+          margin-right: 40px;
+        }
+
+        .exam-card {
+          width: 230px;
+          padding: 20px;
+          margin: 15px;
+
+          .subject-name {
+            display: flex;
+            margin-bottom: 20px;
+
+            img {
+              height: 35px;
+              margin-right: 10px;
+            }
+
+            p {
+              font-weight: 600;
+              font-size: 1.2rem;
+            }
+          }
+
+          .stat {
+            display: flex;
+            align-items: center;
+
+            img {
+              height: 20px;
+              margin-right: 10px;
+              // display: flex;
+            }
+
+            p {
+              font-weight: 500;
+            }
+          }
+
+          button {
+            margin-top: 15px;
+            padding: 4px 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .center::-webkit-scrollbar {
+    display: none;
+  }
+
+  & > .right {
+    height: 100%;
+    width: 450px;
+    // width: min-content;
+
+    img {
+      width: 100%;
+    }
+  }
+}
